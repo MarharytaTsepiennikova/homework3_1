@@ -33,7 +33,7 @@ public class QuestionsServlet extends HttpServlet {
 
 
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.setContentType("text/html");
+        resp.setContentType("text/html; charset=utf-8");
         PrintWriter pw = resp.getWriter();
 
         final String browser = req.getParameter("browser");
